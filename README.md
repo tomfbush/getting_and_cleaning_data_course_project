@@ -2,7 +2,7 @@
 
 ## Preparation
 
-This readme sits in the repo at ______
+This readme sits in the repo at https://github.com/tomfbush/getting_and_cleaning_data_course_project
 
 The main code is in run_analysis.R. In order to get this working it should be in the same folder as the test and train directories from the unpacked data. The data itself comes from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip as per the assignment.
 
