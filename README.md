@@ -6,7 +6,7 @@ This readme sits in the repo at https://github.com/tomfbush/getting_and_cleaning
 
 The main code is in `run_analysis.R`. In order to get this working it should be in the same folder as the `test` and `train` directories from the unpacked data. The data itself comes from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip as per the assignment.
 
-## The script
+## Summary of the script
 
 Summary of the things the script does to satisfy the requirements laid out by the assignment:
 
