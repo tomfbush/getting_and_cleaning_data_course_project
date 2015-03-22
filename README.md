@@ -20,13 +20,13 @@ Summary of the things the script does to satisfy the requirements laid out by th
 
 |Variable|Description|
 |--------|--------------|
-|activities|this contains the data from activity_labels.txt|
+|activities|this contains the data from `activity_labels.txt`|
 |averages|variable used to store the final output before writing to text file|
 |combined_data|combination of x and y, train and test data, prior to averaging or focusing on standard deviation or mean, prior to merging in the descriptive activity names|
-|features|contains data from features.txt as a vector for use as column names for X_test and X-train|
+|features|contains data from `features.txt` as a vector for use as column names for `X_test` and `X-train`|
 |merged_data|sd_mean_data but including descriptive activity names|
 |sd_mean_data|combined_data but after using reg exp to select only standard deviation or mean columns|
-|subject_test, subject_train|
-|test_data, train_data||
-|X_test, X_train||
-|y_test, y_train||
+|subject_test, subject_train|details on who the subject was in each test read from `subject_train.txt` and `subject_test.txt`|
+|test_data, train_data|combinations of `X_test` and `y_test`, or `X_train` and `y_train`|
+|X_test, X_train|measurements data from `X_test.txt` and `X_train.txt`|
+|y_test, y_train|activity data for each test, from `y_test.txt` and `y_train.txt`|
