@@ -22,8 +22,8 @@ Summary of the things the script does to satisfy the requirements laid out by th
 |--------|--------------|
 |activities|this contains the data from `activity_labels.txt`|
 |averages|variable used to store the final output before writing to text file|
-|combined_data|combination of x and y, train and test data, prior to averaging or focusing on standard deviation or mean, prior to merging in the descriptive activity names|
-|features|contains data from `features.txt` as a vector for use as column names for `X_test` and `X-train`|
+|combined_data|combination of x and y and train and test data made using rbind, prior to averaging or focusing on standard deviation or mean, prior to merging in the descriptive activity names|
+|features|contains data from `features.txt` as a vector for use as column names for `X_test` and `X_train`|
 |merged_data|sd_mean_data but including descriptive activity names|
 |sd_mean_data|combined_data but after using reg exp to select only standard deviation or mean columns|
 |subject_test, subject_train|details on who the subject was in each test read from `subject_train.txt` and `subject_test.txt`|
