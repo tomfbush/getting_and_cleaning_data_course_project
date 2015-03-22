@@ -4,7 +4,7 @@
 
 This readme sits in the repo at https://github.com/tomfbush/getting_and_cleaning_data_course_project
 
-The main code is in run_analysis.R. In order to get this working it should be in the same folder as the test and train directories from the unpacked data. The data itself comes from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip as per the assignment.
+The main code is in `run_analysis.R`. In order to get this working it should be in the same folder as the `test` and `train` directories from the unpacked data. The data itself comes from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip as per the assignment.
 
 ## The script
 
@@ -12,10 +12,21 @@ Summary of the things the script does to satisfy the requirements laid out by th
 
 1. Merge training and data sets. I added the names of the features at this stage too by reading them from the file into a vector and using that to populate the column names for the data from X test/train.
 2. Extract only the measurements on the mean and standard deviation for each measurement. This is achieved with a regular expression. 
-3. Use descriptive activity names to name the activities in the data set. This is achieved by merging the activity_labels.txt and the data assembled in step 1.
-4. Appropriately label data. This is mostly done by the inclusion of the features vector in step 1 but I did move some columns around here.
-5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject. This can be seen in averages.txt.
+3. Use descriptive activity names to name the activities in the data set. This is achieved by merging the `activity_labels.txt` and the data assembled in step 1.
+4. Appropriately label data. This is mostly done by the inclusion of the `features` vector in step 1 but I did move some columns around here.
+5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject. This can be seen in `averages.txt`.
 
 ## Codebook
 
-The codebook 
+|Variable|Description|
+|--------|--------------|
+|activities|this contains the data from activity_labels.txt|
+|averages|variable used to store the final output before writing to text file|
+|combined_data|combination of x and y, train and test data, prior to averaging or focusing on standard deviation or mean, prior to merging in the descriptive activity names|
+|features|contains data from features.txt as a vector for use as column names for X_test and X-train|
+|merged_data|sd_mean_data but including descriptive activity names|
+|sd_mean_data|combined_data but after using reg exp to select only standard deviation or mean columns|
+|subject_test, subject_train|
+|test_data, train_data||
+|X_test, X_train||
+|y_test, y_train||
